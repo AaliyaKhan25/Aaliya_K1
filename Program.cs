@@ -11,13 +11,6 @@ public sealed record Info(string Labels, string Prev, string Ctx, string Attrs, 
 public sealed record Cand(IWebElement El, Info I);
 public sealed record Outcome(string Field, bool Ok, string Detail);
 
-/// <summary>
-/// Fills First Name (text), Gender (radio) and State (dropdown) on a form WITHOUT relying on a fixed
-/// id / name / class / XPath / field order. Fields are found by *what a human would read*:
-/// the associated label, aria-label, placeholder, the text just before the control, the option
-/// texts (Male/Female, a list of states), with id/name only as a weak extra hint.
-/// Every candidate gets a score; the best one above a threshold wins.
-/// </summary>
 public static class Program
 {
     const string DefaultUrl = "https://app.cloudqa.io/home/AutomationPracticeForm";
