@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>ResilientForm</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Selenium 4.6+ ships Selenium Manager, so chromedriver is downloaded automatically. -->
+    <PackageReference Include="Selenium.WebDriver" Version="4.25.0" />
+  </ItemGroup>
+
+</Project>

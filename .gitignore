@@ -1,0 +1,11 @@
+# build output
+bin/
+obj/
+
+# run output
+result.png
+
+# IDE
+.vs/
+.vscode/
+*.user
